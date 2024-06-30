@@ -13,7 +13,7 @@ jobs:
       - uses: pnpm/action-setup@v4
         name: Install pnpm
         with:
-          version: 8
+          version: 9
           run_install: false
 
       - name: Install Node.js
@@ -40,4 +40,6 @@ jobs:
       - uses: mongolyy/reviewdog-action-biome@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          reporter: github-pr-review
+          reporter: local
+          filter_mode: nofilter
+          #github-pr-review
