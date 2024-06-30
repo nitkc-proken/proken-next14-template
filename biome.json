@@ -1,5 +1,8 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+	"files": {
+		"ignore": [".next", "node_modules"]
+	},
 	"organizeImports": {
 		"enabled": true
 	},
@@ -11,7 +14,6 @@
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
-		"ignore": [".next", "node_modules"],
 		"indentWidth": 2,
 		"indentStyle": "tab",
 		"lineWidth": 80
@@ -23,6 +25,11 @@
 			"a11y": {
 				"all": false
 			}
+		}
+	},
+	"json": {
+		"parser": {
+			"allowComments": true
 		}
 	}
 }
