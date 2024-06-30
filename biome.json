@@ -13,7 +13,7 @@
     "formatWithErrors": false,
     "ignore": [".next", "node_modules"],
     "indentWidth": 2,
-    "indentStyle": "space",
+    "indentStyle": "tab",
     "lineWidth": 80
   },
   "linter": {
